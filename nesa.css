@@ -1,0 +1,122 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: linear-gradient(to right, #f1f3f6, #e0f7fa);
+}
+
+/* Header */
+header {
+    background: #131921;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: slideDown 1s ease;
+}
+
+header input {
+    padding: 8px;
+    width: 40%;
+}
+
+/* Navbar */
+nav {
+    background: #232f3e;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+/* Home */
+.home {
+    background: url('blueBack.jpg') no-repeat center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 80px;
+}
+
+/* Products */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    background: white;
+    margin: 15px;
+    padding: 15px;
+    width: 220px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ccc;
+    transition: 0.4s;
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+/* Animations */
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.product:hover img {
+    transform: scale(1.1);
+}
+
+button {
+    background: #ff9900;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e68a00;
+    transform: scale(1.1);
+}
+
+/* Cart */
+#cart {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+#cart:hover {
+    transform: scale(1.02);
+}
+
+/* Footer */
+footer {
+    background: #131921;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header animation */
+@keyframes slideDown {
+    from {transform: translateY(-50px); opacity: 0;}
+    to {transform: translateY(0); opacity: 1;}
+}
