@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dictionary App</title>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="dictionary.css" />
+</head>
+<body>
+
+<nav class="navbar">
+    <ul>
+        <li><a href="#" onclick="showPage('app')">App</a></li>
+        <li><a href="#" onclick="showPage('intro')">Introduction</a></li>
+        <li><a href="#" onclick="showPage('tech')">Technologies Used</a></li>
+        <li><a href="#" onclick="showPage('adv')">Advantages</a></li>
+    </ul>
+</nav>
+
+<div class="allcon" id="app">
+    <audio id="sound"></audio>
+
+    <div class="outet">
+        <div class="imge">
+            <img src="./Dictionary-pana.png" class="newimg" alt="Dictionary Image">
+        </div>
+
+        <div class="container">
+            <div class="search-box">
+                <input type="text" placeholder="Search word..." id="myword" />
+
+                <select id="language-select">
+                    <option value="ta">Tamil</option>
+                    <option value="hi">Hindi</option>
+                    <option value="te">Telugu</option>
+                    <option value="ml">Malayalam</option>
+                    <option value="fr">French</option>
+                </select>
+
+                <button id="search-btn">Search</button>
+                <button id="voice-btn" onclick="startVoice()">🎤</button>
+            </div>
+
+            <div class="result" id="showans"></div>
+        </div>
+    </div>
+</div>
+
+<section id="intro" class="info-section">
+    <h2>Introduction</h2>
+    <p>
+        This is a web-based multi-language dictionary application.
+        Users can search English words and get meanings, pronunciation,
+        examples and translation in selected language.
+    </p>
+</section>
+
+<section id="tech" class="info-section">
+    <h2>Technologies Used</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Dictionary API</li>
+        <li>Google Translation API</li>
+    </ul>
+</section>
+
+<section id="adv" class="info-section">
+    <h2>Advantages</h2>
+    <ul>
+        <li>Multi-language support</li>
+        <li>Voice search</li>
+        <li>User friendly design</li>
+        <li>Responsive layout</li>
+    </ul>
+</section>
+
+<script src="dictionary-data.js"></script>
+</body>
+</html>
